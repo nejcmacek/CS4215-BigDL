@@ -1,0 +1,9 @@
+personal/
+tmp/
+*.tmp
+
+.vscode/
+.vs/
+.idea/
+
+Thumbs.db
