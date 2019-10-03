@@ -10,6 +10,9 @@ type Params = {
 	maxEpoch: number
 	learningRate: number
 	learningrateDecay: number
+	driverCores: number
+	totalExecutorCores: number
+	executorCores: number
 	executorMemory: string
 }
 

@@ -22,6 +22,9 @@ const defaultParams = {
 	maxEpoch: 5,
 	learningRate: 0.01,
 	learningrateDecay: 0.0002,
+	driverCores: 1,
+	totalExecutorCores: 1,
+	executorCores: 1,
 	executorMemory: "1G"
 }
 
@@ -67,11 +70,11 @@ const buildArgs = argv => {
 const buildConfig = params => ({
 	jobClassParameters: [{
 		systemParameters: {
-			driverCores: "1",
+			driverCores: params.driverCores.toString(),
 			driverMemory: "1G",
-			totalExecutorCores: "1",
-			executorCores: "1",
-			executorMemory: params.executorMemory.toString(),
+			totalExecutorCores: params.totalExecutorCores.toString(),
+			executorCores: params.executorCores.toString(),
+			executorMemory: params.executorMemory,
 			pyFiles: path.resolve(params.pathSpark, "lib/bigdl-0.8.0-python-api.zip") + "," + path.resolve(params.pathCodes, params.runScript),
 			propertiesFile: path.resolve(params.pathSpark, "conf/spark-bigdl.conf"),
 			jars: path.resolve(params.pathSpark, "lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar"),
