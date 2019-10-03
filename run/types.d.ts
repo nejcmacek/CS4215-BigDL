@@ -1,5 +1,6 @@
 type Params = {
 	outFile: string
+	runScript: string
 	pathCodes: string
 	pathSpark: string
 	master: string
@@ -9,6 +10,7 @@ type Params = {
 	maxEpoch: number
 	learningRate: number
 	learningrateDecay: number
+	executorMemory: string
 }
 
 type Args = {

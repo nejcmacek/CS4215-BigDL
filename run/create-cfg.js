@@ -11,6 +11,7 @@ const fs = require("fs")
  */
 const defaultParams = {
 	outFile: "config.json",
+	runScript: "lenet5.py",
 	pathCodes: "/home/test/bd/codes", // provided by the bash script
 	pathSpark: "/home/test/bd/spark", // provided by the bash script
 	master: "spark://localhost:7077",
@@ -71,12 +72,12 @@ const buildConfig = params => ({
 			totalExecutorCores: "1",
 			executorCores: "1",
 			executorMemory: params.executorMemory.toString(),
-			pyFiles: path.resolve(params.pathSpark, "lib/bigdl-0.8.0-python-api.zip") + "," + path.resolve(params.pathCodes, "lenet5.py"),
+			pyFiles: path.resolve(params.pathSpark, "lib/bigdl-0.8.0-python-api.zip") + "," + path.resolve(params.pathCodes, params.runScript),
 			propertiesFile: path.resolve(params.pathSpark, "conf/spark-bigdl.conf"),
 			jars: path.resolve(params.pathSpark, "lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar"),
 			conf: [
 				"spark.driver.extraClassPath=" + path.resolve(params.pathSpark, "lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar"),
-				"spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar " + path.resolve(params.pathCodes, "lenet5.py"),
+				"spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar " + path.resolve(params.pathCodes, params.runScript),
 			],
 			action: "train",
 			dataPath: "/tmp/mnist",
