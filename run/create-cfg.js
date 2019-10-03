@@ -21,6 +21,7 @@ const defaultParams = {
 	maxEpoch: 5,
 	learningRate: 0.01,
 	learningrateDecay: 0.0002,
+	executorMemory: "1G"
 }
 
 /**
@@ -69,7 +70,7 @@ const buildConfig = params => ({
 			driverMemory: "1G",
 			totalExecutorCores: "1",
 			executorCores: "1",
-			executorMemory: "1G",
+			executorMemory: params.executorMemory.toString(),
 			pyFiles: path.resolve(params.pathSpark, "lib/bigdl-0.8.0-python-api.zip") + "," + path.resolve(params.pathCodes, "lenet5.py"),
 			propertiesFile: path.resolve(params.pathSpark, "conf/spark-bigdl.conf"),
 			jars: path.resolve(params.pathSpark, "lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar"),

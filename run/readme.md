@@ -69,7 +69,7 @@ It accepts several arguments, the first two are required:
 | --maxEpoch [val]          | `5`                      | bigdl hyperparameter               |
 | --learningRate [val]      | `0.01`                   | bigdl hyperparameter               |
 | --learningrateDecay [val] | `0.0002`                 | bigdl hyperparameter               |
-
+| --executorMemory [val]    | `1G`
 The system check for correct spelling of the flags to avoid issues that could go undetected. As usual, the flags don't need to be in order.
 
 Note that defaults for `--lambda` and `--runtime` are adjusted such that running with no arguments doesn't take an hour (for testing purposes).
