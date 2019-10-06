@@ -14,6 +14,8 @@ type Params = {
 	totalExecutorCores: number
 	executorCores: number
 	executorMemory: string
+	preemptJobs: number
+	numberOfNodes: number
 }
 
 type Args = {

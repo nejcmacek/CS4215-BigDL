@@ -101,6 +101,7 @@ const buildConfig = params => ({
 	lambda: params.lambda,
 	runtime: params.runtime,
 	preemptJobs: params.preemptJobs,
+	numberOfNodes: params.numberOfNodes,
 })
 
 const run = () => {
