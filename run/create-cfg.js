@@ -25,7 +25,8 @@ const defaultParams = {
 	driverCores: 1,
 	totalExecutorCores: 1,
 	executorCores: 1,
-	executorMemory: "1G"
+	executorMemory: "1G",
+	numberOfNodes: 1
 }
 
 /**
