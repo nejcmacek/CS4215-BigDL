@@ -58,4 +58,6 @@ fi
 echo "Running the generator..."
 ${BD_SPARKGEN}/src/sparkgen/sparkgen -r -d -c $outdir/config.json -f $outdir |& tee "$outdir/sparkgen-log.txt" | node $dirname/summary "$outdir/summary.json"
 
+node $dirname/results $(ls $outdir/*.out) > $outdir/accuracy.json
+
 echo "DONE!"
