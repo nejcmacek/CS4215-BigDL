@@ -56,13 +56,6 @@ fi
 
 # Run the generator & analyse the result
 echo "Running the generator..."
-${BD_SPARKGEN}/src/sparkgen/sparkgen -r -d -c $outdir/config.json --name $outdir |& tee "$outdir/sparkgen-log.txt" | node $dirname/summary "$outdir/summary.json"
-
-outtest="test_$outdir"
-
-# Copy the first result files
-if [ -f "$outtest/0.100000.out" ]; then
-	cp -a "$outtest/." "$outdir/"
-fi
+${BD_SPARKGEN}/src/sparkgen/sparkgen -r -d -c $outdir/config.json -f $outdir |& tee "$outdir/sparkgen-log.txt" | node $dirname/summary "$outdir/summary.json"
 
 echo "DONE!"

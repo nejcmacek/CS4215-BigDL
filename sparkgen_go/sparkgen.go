@@ -77,12 +77,14 @@ var recordDir string = ""
 var configFileName string = ""
 var lambda float64 = 0.001
 var numberOfNodes int = 1
+var outdir string = ""
 
 func init() {
 	flag.StringVar(&configFileName, "c", "conf.json", "config file")
 	flag.BoolVar(&debug, "d", false, "debug logging")
 	flag.BoolVar(&record, "r", false, "record output")
 	flag.IntVar(&numberOfNodes, "n", 1, "number of nodes")
+	flag.StringVar(&outdir, "f", "result/test", "output directory")
 }
 
 func generator() {
@@ -444,7 +446,7 @@ func main() {
 
 	if(record) {
 		//Create output dir using config file as base
-		recordDir = "test_" + config.OutputName //config.Configfile+".res"
+		recordDir = outdir //config.Configfile+".res"
 		err := os.MkdirAll(recordDir, 0755)
 		if err != nil {
 			log.Fatal(err)
