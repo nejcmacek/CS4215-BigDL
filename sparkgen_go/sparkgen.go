@@ -57,6 +57,7 @@ type Config struct {
     Runtime            int `json:"runtime"`
     PreemptJobs        int `json:"preemptJobs"`
     Nodes              int `json:"numberOfNodes"`
+    OutputName         string `json:"name"`
 }
 
 var jobCmds []string = nil
@@ -443,7 +444,7 @@ func main() {
 
 	if(record) {
 		//Create output dir using config file as base
-		recordDir = "test"//config.Configfile+".res"
+		recordDir = "test_" + config.OutputName //config.Configfile+".res"
 		err := os.MkdirAll(recordDir, 0755)
 		if err != nil {
 			log.Fatal(err)
