@@ -7,7 +7,7 @@ const readline = require("readline")
 
 let isShuttingDown = false
 const stats = {
-	jobCount: -1,
+	duration: -1,
 	start: null,
 	shutdown: null,
 	end: null,
@@ -29,22 +29,20 @@ const processLine = line => {
 			return
 		}
 		const jobs = Number(res[1])
-		stats.jobCount = jobs
+		stats.duration = jobs
 		stats.start = date
 	} else if (content == "Shutting down ...") {
 		stats.shutdown = date
 		isShuttingDown = true
 	} else if (isShuttingDown && content == " done!") {
 		stats.end = date
-	} else if (/^\[DIS-\d+\.\d+\] Starting job \d+:/.test(content)) {
-		const job = Number(content.match(/^\[DIS-\d+\.\d+\] Starting job (\d+):/)[1])
-		stats.jobs[job] = [date, null]
-	} else if (/\[LOG-\d+\.\d+\] Job \d+ of class .+ ended with status/.test(content)) {
-		const job = Number(content.match(/^\[LOG-\d+\.\d+\] Job (\d+) /)[1])
-		if (stats.jobs[job])
-			stats.jobs[job][1] = date
-		else
-			stats.jobs[job] = [null, date]
+	} else if (content.startsWith("[LOG-DONE]")) {
+		const [, id, arrive, start, end] = content.match(/^\[LOG-DONE\] \d+,(\d+),\w+,(\d+\.?\d*),(\d+\.?\d*),(\d+\.?\d*)/)
+		stats.jobs[id] = {
+			arrive,
+			start,
+			end,
+		}
 	}
 }
 
