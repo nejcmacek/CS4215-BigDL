@@ -8,6 +8,7 @@ const readline = require("readline")
 let isShuttingDown = false
 const stats = {
 	duration: -1,
+	jobCount: -1,
 	start: null,
 	shutdown: null,
 	end: null,
@@ -36,6 +37,10 @@ const processLine = line => {
 		isShuttingDown = true
 	} else if (isShuttingDown && content == " done!") {
 		stats.end = date
+	} else if (content.startsWith("[GEN] Generated new job ")) {
+		const [, id] = content.match(/^\[GEN\] Generated new job (\d+)/)
+		const num = Number(id) + 1
+		stats.jobCount = Math.max(stats.jobCount, num)
 	} else if (content.startsWith("[LOG-DONE]")) {
 		const [, id, arrive, start, end] = content.match(/^\[LOG-DONE\] \d+,(\d+),\w+,(\d+\.?\d*),(\d+\.?\d*),(\d+\.?\d*)/)
 		stats.jobs[id] = {
