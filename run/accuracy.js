@@ -13,9 +13,9 @@ const results = {}
 files.forEach(file => {
 	const content = fs.readFileSync(file, { encoding: "utf-8" })
 
-	const [, top1, top1num] = content.match(/Evaluated result: (\d+\.?\d*), total_num: (\d+), method: Top1Accuracy/)
-	const [, top5, top5num] = content.match(/Evaluated result: (\d+\.?\d*), total_num: (\d+), method: Top5Accuracy/)
-	const [, loss, lossnum] = content.match(/Evaluated result: (\d+\.?\d*), total_num: (\d+), method: Loss/)
+	const [, top1, top1num] = content.match(/Evaluated result: (\d+\.?\d*), total_num: (\d+), method: Top1Accuracy/) || [, null, null]
+	const [, top5, top5num] = content.match(/Evaluated result: (\d+\.?\d*), total_num: (\d+), method: Top5Accuracy/) || [, null, null]
+	const [, loss, lossnum] = content.match(/Evaluated result: (\d+\.?\d*), total_num: (\d+), method: Loss/) || [, null, null]
 
 	const node = { top1, top1num, top5, top5num, loss, lossnum }
 	const name = path.basename(file)
