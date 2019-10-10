@@ -14,7 +14,7 @@ import pandas as pd
 ## The standard variables
 
 out_start = "result/experiment"
-server_url = "spark://10.0.0.2:7077"
+server_url = "spark://10.164.0.2:7077"
 
 ## Set the default levels
 labels = ["learningRate", "batchSize", "maxEpoch", "executorMemory", "numberOfNodes", "lambda"]
