@@ -78,6 +78,7 @@ var configFileName string = ""
 var lambda float64 = 0.001
 var numberOfNodes int = 1
 var outdir string = ""
+var runningCmds = list.New()
 
 func init() {
 	flag.StringVar(&configFileName, "c", "conf.json", "config file")
@@ -247,6 +248,7 @@ func scheduler() {
 				if j != nil {
 					runningJob = j
 					runningCmd = dispatch(j, lid+0.1)
+					runningCmds.PushBack(runningCmd)
                     runningJobs.PushBack(runningJob)
                     log.Printf("[Jobs Running] %d", runningJobs.Len())
 					lid++
@@ -317,6 +319,8 @@ func scheduler() {
 			qlock.Unlock()
 			if runningJob != nil {
 				runningCmd = dispatch(runningJob, lid+0.3)
+
+
                 runningJobs.PushBack(runningJob)
                 log.Printf("[Running Jobs] %d", runningJobs.Len())
 				lid++
@@ -488,5 +492,14 @@ func main() {
 	run = 0
 	<- wait
 	<- wait
+
+	log.Printf("Killing all cmds")
+
+	var next *list.Element
+    for e := runningCmds.Front(); e != nil; e = next {
+        next = e.Next()
+
+        e.Value.(*exec.Cmd).Process.Kill()
+    }
 	log.Printf(" done!\n")
 }
