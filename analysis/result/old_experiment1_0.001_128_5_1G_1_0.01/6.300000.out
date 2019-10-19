@@ -1,0 +1,251 @@
+2019-10-14 15:43:54 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2019-10-14 15:43:55 INFO  SparkContext:54 - Running Spark version 2.3.1
+2019-10-14 15:43:55 INFO  SparkContext:54 - Submitted application: lenet5
+2019-10-14 15:43:55 INFO  SecurityManager:54 - Changing view acls to: martijn01_vermeulen
+2019-10-14 15:43:55 INFO  SecurityManager:54 - Changing modify acls to: martijn01_vermeulen
+2019-10-14 15:43:55 INFO  SecurityManager:54 - Changing view acls groups to: 
+2019-10-14 15:43:55 INFO  SecurityManager:54 - Changing modify acls groups to: 
+2019-10-14 15:43:55 INFO  SecurityManager:54 - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(martijn01_vermeulen); groups with view permissions: Set(); users  with modify permissions: Set(martijn01_vermeulen); groups with modify permissions: Set()
+2019-10-14 15:43:55 INFO  Utils:54 - Successfully started service 'sparkDriver' on port 42495.
+2019-10-14 15:43:55 INFO  SparkEnv:54 - Registering MapOutputTracker
+2019-10-14 15:43:55 INFO  SparkEnv:54 - Registering BlockManagerMaster
+2019-10-14 15:43:55 INFO  BlockManagerMasterEndpoint:54 - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2019-10-14 15:43:55 INFO  BlockManagerMasterEndpoint:54 - BlockManagerMasterEndpoint up
+2019-10-14 15:43:55 INFO  DiskBlockManager:54 - Created local directory at /tmp/blockmgr-9e5752fb-100b-42f7-a12b-b75367b541e6
+2019-10-14 15:43:55 INFO  MemoryStore:54 - MemoryStore started with capacity 366.3 MB
+2019-10-14 15:43:55 INFO  SparkEnv:54 - Registering OutputCommitCoordinator
+2019-10-14 15:43:55 INFO  log:192 - Logging initialized @2371ms
+2019-10-14 15:43:55 INFO  Server:346 - jetty-9.3.z-SNAPSHOT
+2019-10-14 15:43:55 INFO  Server:414 - Started @2468ms
+2019-10-14 15:43:55 INFO  AbstractConnector:278 - Started ServerConnector@4b8ef55b{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}
+2019-10-14 15:43:55 INFO  Utils:54 - Successfully started service 'SparkUI' on port 4040.
+2019-10-14 15:43:55 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1587387e{/jobs,null,AVAILABLE,@Spark}
+2019-10-14 15:43:55 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@9805d1f{/jobs/json,null,AVAILABLE,@Spark}
+2019-10-14 15:43:55 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@23cd70c2{/jobs/job,null,AVAILABLE,@Spark}
+2019-10-14 15:43:55 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1c02f74f{/jobs/job/json,null,AVAILABLE,@Spark}
+2019-10-14 15:43:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@17e13975{/stages,null,AVAILABLE,@Spark}
+2019-10-14 15:43:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5f62002b{/stages/json,null,AVAILABLE,@Spark}
+2019-10-14 15:43:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@23fffed6{/stages/stage,null,AVAILABLE,@Spark}
+2019-10-14 15:43:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@79d44e28{/stages/stage/json,null,AVAILABLE,@Spark}
+2019-10-14 15:43:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@2581068a{/stages/pool,null,AVAILABLE,@Spark}
+2019-10-14 15:43:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6be830c6{/stages/pool/json,null,AVAILABLE,@Spark}
+2019-10-14 15:43:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1e791a6c{/storage,null,AVAILABLE,@Spark}
+2019-10-14 15:43:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@4507b285{/storage/json,null,AVAILABLE,@Spark}
+2019-10-14 15:43:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@689f49f9{/storage/rdd,null,AVAILABLE,@Spark}
+2019-10-14 15:43:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@425b3a2c{/storage/rdd/json,null,AVAILABLE,@Spark}
+2019-10-14 15:43:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1427e271{/environment,null,AVAILABLE,@Spark}
+2019-10-14 15:43:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6c4cf9ea{/environment/json,null,AVAILABLE,@Spark}
+2019-10-14 15:43:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@7e8ea51b{/executors,null,AVAILABLE,@Spark}
+2019-10-14 15:43:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@659f7abc{/executors/json,null,AVAILABLE,@Spark}
+2019-10-14 15:43:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@4e003814{/executors/threadDump,null,AVAILABLE,@Spark}
+2019-10-14 15:43:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@45881b97{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2019-10-14 15:43:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@4e25c840{/static,null,AVAILABLE,@Spark}
+2019-10-14 15:43:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@49c5da62{/,null,AVAILABLE,@Spark}
+2019-10-14 15:43:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@e344888{/api,null,AVAILABLE,@Spark}
+2019-10-14 15:43:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@15998995{/jobs/job/kill,null,AVAILABLE,@Spark}
+2019-10-14 15:43:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@9428253{/stages/stage/kill,null,AVAILABLE,@Spark}
+2019-10-14 15:43:56 INFO  SparkUI:54 - Bound SparkUI to 0.0.0.0, and started at http://project-group-85cf.europe-west4-a.c.quantitative-performance.internal:4040
+2019-10-14 15:43:56 INFO  SparkContext:54 - Added JAR file:///home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar at spark://project-group-85cf.europe-west4-a.c.quantitative-performance.internal:42495/jars/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar with timestamp 1571067836132
+2019-10-14 15:43:56 INFO  SparkContext:54 - Added file file:/home/test/bd/codes/lenet5.py at spark://project-group-85cf.europe-west4-a.c.quantitative-performance.internal:42495/files/lenet5.py with timestamp 1571067836162
+2019-10-14 15:43:56 INFO  Utils:54 - Copying /home/test/bd/codes/lenet5.py to /tmp/spark-9cb46554-43b2-40f2-afd6-c7d3400ef74c/userFiles-20dd6bf4-1508-4129-aa35-055da29d08cf/lenet5.py
+2019-10-14 15:43:56 INFO  SparkContext:54 - Added file file:///home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip at spark://project-group-85cf.europe-west4-a.c.quantitative-performance.internal:42495/files/bigdl-0.8.0-python-api.zip with timestamp 1571067836176
+2019-10-14 15:43:56 INFO  Utils:54 - Copying /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip to /tmp/spark-9cb46554-43b2-40f2-afd6-c7d3400ef74c/userFiles-20dd6bf4-1508-4129-aa35-055da29d08cf/bigdl-0.8.0-python-api.zip
+2019-10-14 15:43:56 INFO  StandaloneAppClient$ClientEndpoint:54 - Connecting to master spark://10.164.0.2:7077...
+2019-10-14 15:43:56 INFO  TransportClientFactory:267 - Successfully created connection to /10.164.0.2:7077 after 68 ms (0 ms spent in bootstraps)
+2019-10-14 15:43:56 INFO  StandaloneSchedulerBackend:54 - Connected to Spark cluster with app ID app-20191014154356-0020
+2019-10-14 15:43:56 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20191014154356-0020/0 on worker-20191014130941-10.164.0.3-44061 (10.164.0.3:44061) with 1 core(s)
+2019-10-14 15:43:56 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20191014154356-0020/0 on hostPort 10.164.0.3:44061 with 1 core(s), 1024.0 MB RAM
+2019-10-14 15:43:56 INFO  Utils:54 - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 35353.
+2019-10-14 15:43:56 INFO  NettyBlockTransferService:54 - Server created on project-group-85cf.europe-west4-a.c.quantitative-performance.internal:35353
+2019-10-14 15:43:56 INFO  BlockManager:54 - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2019-10-14 15:43:56 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20191014154356-0020/0 is now RUNNING
+2019-10-14 15:43:56 INFO  BlockManagerMaster:54 - Registering BlockManager BlockManagerId(driver, project-group-85cf.europe-west4-a.c.quantitative-performance.internal, 35353, None)
+2019-10-14 15:43:56 INFO  BlockManagerMasterEndpoint:54 - Registering block manager project-group-85cf.europe-west4-a.c.quantitative-performance.internal:35353 with 366.3 MB RAM, BlockManagerId(driver, project-group-85cf.europe-west4-a.c.quantitative-performance.internal, 35353, None)
+2019-10-14 15:43:56 INFO  BlockManagerMaster:54 - Registered BlockManager BlockManagerId(driver, project-group-85cf.europe-west4-a.c.quantitative-performance.internal, 35353, None)
+2019-10-14 15:43:56 INFO  BlockManager:54 - Initialized BlockManager: BlockManagerId(driver, project-group-85cf.europe-west4-a.c.quantitative-performance.internal, 35353, None)
+2019-10-14 15:43:56 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@393e9a3d{/metrics/json,null,AVAILABLE,@Spark}
+2019-10-14 15:43:59 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.164.0.3:42692) with ID 0
+2019-10-14 15:43:59 INFO  StandaloneSchedulerBackend:54 - SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 1.0
+2019-10-14 15:43:59 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.164.0.3:42401 with 413.9 MB RAM, BlockManagerId(0, 10.164.0.3, 42401, None)
+2019-10-14 15:43:59 INFO  Engine$:112 - Auto detect executor number and executor cores number
+2019-10-14 15:43:59 INFO  Engine$:114 - Executor number is 1 and executor cores number is 1
+2019-10-14 15:44:00 INFO  ThreadPool$:95 - Set mkl threads to 1 on thread 18
+2019-10-14 15:44:00 INFO  Engine$:402 - Find existing spark context. Checking the spark conf...
+cls.getname: com.intel.analytics.bigdl.python.api.Sample
+BigDLBasePickler registering: bigdl.util.common  Sample
+cls.getname: com.intel.analytics.bigdl.python.api.EvaluatedResult
+BigDLBasePickler registering: bigdl.util.common  EvaluatedResult
+cls.getname: com.intel.analytics.bigdl.python.api.JTensor
+BigDLBasePickler registering: bigdl.util.common  JTensor
+cls.getname: com.intel.analytics.bigdl.python.api.JActivity
+BigDLBasePickler registering: bigdl.util.common  JActivity
+0.001
+('Extracting', '/tmp/mnist/train-images-idx3-ubyte.gz')
+('Extracting', '/tmp/mnist/train-labels-idx1-ubyte.gz')
+('Extracting', '/tmp/mnist/t10k-images-idx3-ubyte.gz')
+('Extracting', '/tmp/mnist/t10k-labels-idx1-ubyte.gz')
+creating: createSequential
+creating: createReshape
+creating: createSpatialConvolution
+creating: createTanh
+creating: createSpatialMaxPooling
+creating: createSpatialConvolution
+creating: createTanh
+creating: createSpatialMaxPooling
+creating: createReshape
+creating: createLinear
+creating: createTanh
+creating: createLinear
+creating: createLogSoftMax
+creating: createClassNLLCriterion
+creating: createDefault
+creating: createSGD
+creating: createMaxEpoch
+creating: createDistriOptimizer
+disableCheckSingleton is deprecated. Please use bigdl.check.singleton instead
+creating: createEveryEpoch
+creating: createTop1Accuracy
+creating: createEveryEpoch
+2019-10-14 15:44:01 INFO  DistriOptimizer$:784 - caching training rdd ...
+2019-10-14 15:44:18 INFO  DistriOptimizer$:624 - Cache thread models...
+2019-10-14 15:44:19 INFO  DistriOptimizer$:626 - Cache thread models... done
+2019-10-14 15:44:19 INFO  DistriOptimizer$:154 - Count dataset
+2019-10-14 15:44:19 INFO  DistriOptimizer$:158 - Count dataset complete. Time elapsed: 0.38271149s
+2019-10-14 15:44:19 INFO  DistriOptimizer$:166 - config  {
+	computeThresholdbatchSize: 100
+	maxDropPercentage: 0.0
+	warmupIterationNum: 200
+	isLayerwiseScaled: false
+	dropPercentage: 0.0
+ }
+2019-10-14 15:44:19 INFO  DistriOptimizer$:170 - Shuffle data
+2019-10-14 15:44:19 INFO  DistriOptimizer$:173 - Shuffle data complete. Takes 0.032535333s
+2019-10-14 15:44:20 INFO  DistriOptimizer$:408 - [Epoch 1 128/60000][Iteration 1][Wall Clock 0.83952454s] Trained 128 records in 0.83952454 seconds. Throughput is 152.46725 records/second. Loss is 2.3089492. Sequentialaf40d54's hyper parameters: Current learning rate is 0.001. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:21 INFO  DistriOptimizer$:408 - [Epoch 1 256/60000][Iteration 2][Wall Clock 1.119722741s] Trained 128 records in 0.280198201 seconds. Throughput is 456.81952 records/second. Loss is 2.3194795. Sequentialaf40d54's hyper parameters: Current learning rate is 9.990009990009992E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:21 INFO  DistriOptimizer$:408 - [Epoch 1 384/60000][Iteration 3][Wall Clock 1.338625126s] Trained 128 records in 0.218902385 seconds. Throughput is 584.73553 records/second. Loss is 2.2914884. Sequentialaf40d54's hyper parameters: Current learning rate is 9.98003992015968E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:21 INFO  DistriOptimizer$:408 - [Epoch 1 512/60000][Iteration 4][Wall Clock 1.55683291s] Trained 128 records in 0.218207784 seconds. Throughput is 586.59686 records/second. Loss is 2.3129392. Sequentialaf40d54's hyper parameters: Current learning rate is 9.970089730807579E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:21 INFO  DistriOptimizer$:408 - [Epoch 1 640/60000][Iteration 5][Wall Clock 1.76541371s] Trained 128 records in 0.2085808 seconds. Throughput is 613.671 records/second. Loss is 2.3110948. Sequentialaf40d54's hyper parameters: Current learning rate is 9.9601593625498E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:21 INFO  DistriOptimizer$:408 - [Epoch 1 768/60000][Iteration 6][Wall Clock 1.965049528s] Trained 128 records in 0.199635818 seconds. Throughput is 641.1675 records/second. Loss is 2.302289. Sequentialaf40d54's hyper parameters: Current learning rate is 9.950248756218907E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:22 INFO  DistriOptimizer$:408 - [Epoch 1 896/60000][Iteration 7][Wall Clock 2.151513065s] Trained 128 records in 0.186463537 seconds. Throughput is 686.4613 records/second. Loss is 2.3066542. Sequentialaf40d54's hyper parameters: Current learning rate is 9.940357852882705E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:22 INFO  DistriOptimizer$:408 - [Epoch 1 1024/60000][Iteration 8][Wall Clock 2.39558079s] Trained 128 records in 0.244067725 seconds. Throughput is 524.4446 records/second. Loss is 2.292568. Sequentialaf40d54's hyper parameters: Current learning rate is 9.9304865938431E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:22 INFO  DistriOptimizer$:408 - [Epoch 1 1152/60000][Iteration 9][Wall Clock 2.628225566s] Trained 128 records in 0.232644776 seconds. Throughput is 550.195 records/second. Loss is 2.3009014. Sequentialaf40d54's hyper parameters: Current learning rate is 9.92063492063492E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:22 INFO  DistriOptimizer$:408 - [Epoch 1 1280/60000][Iteration 10][Wall Clock 2.79032515s] Trained 128 records in 0.162099584 seconds. Throughput is 789.63806 records/second. Loss is 2.3024495. Sequentialaf40d54's hyper parameters: Current learning rate is 9.91080277502478E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:22 INFO  DistriOptimizer$:408 - [Epoch 1 1408/60000][Iteration 11][Wall Clock 2.960006768s] Trained 128 records in 0.169681618 seconds. Throughput is 754.35394 records/second. Loss is 2.3008957. Sequentialaf40d54's hyper parameters: Current learning rate is 9.900990099009901E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:23 INFO  DistriOptimizer$:408 - [Epoch 1 1536/60000][Iteration 12][Wall Clock 3.117679767s] Trained 128 records in 0.157672999 seconds. Throughput is 811.8067 records/second. Loss is 2.3120866. Sequentialaf40d54's hyper parameters: Current learning rate is 9.891196834817015E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:23 INFO  DistriOptimizer$:408 - [Epoch 1 1664/60000][Iteration 13][Wall Clock 3.279394047s] Trained 128 records in 0.16171428 seconds. Throughput is 791.5194 records/second. Loss is 2.3009393. Sequentialaf40d54's hyper parameters: Current learning rate is 9.881422924901185E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:23 INFO  DistriOptimizer$:408 - [Epoch 1 1792/60000][Iteration 14][Wall Clock 3.456465542s] Trained 128 records in 0.177071495 seconds. Throughput is 722.8718 records/second. Loss is 2.30463. Sequentialaf40d54's hyper parameters: Current learning rate is 9.87166831194472E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:23 INFO  DistriOptimizer$:408 - [Epoch 1 1920/60000][Iteration 15][Wall Clock 3.630344196s] Trained 128 records in 0.173878654 seconds. Throughput is 736.14557 records/second. Loss is 2.3168287. Sequentialaf40d54's hyper parameters: Current learning rate is 9.861932938856016E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:23 INFO  DistriOptimizer$:408 - [Epoch 1 2048/60000][Iteration 16][Wall Clock 3.765991237s] Trained 128 records in 0.135647041 seconds. Throughput is 943.6254 records/second. Loss is 2.3078554. Sequentialaf40d54's hyper parameters: Current learning rate is 9.852216748768474E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:23 INFO  DistriOptimizer$:408 - [Epoch 1 2176/60000][Iteration 17][Wall Clock 3.914934103s] Trained 128 records in 0.148942866 seconds. Throughput is 859.3899 records/second. Loss is 2.3054447. Sequentialaf40d54's hyper parameters: Current learning rate is 9.84251968503937E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:23 INFO  DistriOptimizer$:408 - [Epoch 1 2304/60000][Iteration 18][Wall Clock 4.056197138s] Trained 128 records in 0.141263035 seconds. Throughput is 906.111 records/second. Loss is 2.3024366. Sequentialaf40d54's hyper parameters: Current learning rate is 9.832841691248771E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:24 INFO  DistriOptimizer$:408 - [Epoch 1 2432/60000][Iteration 19][Wall Clock 4.187080326s] Trained 128 records in 0.130883188 seconds. Throughput is 977.9713 records/second. Loss is 2.3001552. Sequentialaf40d54's hyper parameters: Current learning rate is 9.823182711198428E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:24 INFO  DistriOptimizer$:408 - [Epoch 1 2560/60000][Iteration 20][Wall Clock 4.374479349s] Trained 128 records in 0.187399023 seconds. Throughput is 683.0345 records/second. Loss is 2.2988973. Sequentialaf40d54's hyper parameters: Current learning rate is 9.813542688910698E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:24 INFO  DistriOptimizer$:408 - [Epoch 1 2688/60000][Iteration 21][Wall Clock 4.531124113s] Trained 128 records in 0.156644764 seconds. Throughput is 817.1355 records/second. Loss is 2.2930157. Sequentialaf40d54's hyper parameters: Current learning rate is 9.80392156862745E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:24 INFO  DistriOptimizer$:408 - [Epoch 1 2816/60000][Iteration 22][Wall Clock 4.6999783s] Trained 128 records in 0.168854187 seconds. Throughput is 758.0505 records/second. Loss is 2.3005888. Sequentialaf40d54's hyper parameters: Current learning rate is 9.794319294809011E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:24 INFO  DistriOptimizer$:408 - [Epoch 1 2944/60000][Iteration 23][Wall Clock 4.855051831s] Trained 128 records in 0.155073531 seconds. Throughput is 825.41486 records/second. Loss is 2.2985814. Sequentialaf40d54's hyper parameters: Current learning rate is 9.784735812133072E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:24 INFO  DistriOptimizer$:408 - [Epoch 1 3072/60000][Iteration 24][Wall Clock 4.997435158s] Trained 128 records in 0.142383327 seconds. Throughput is 898.9817 records/second. Loss is 2.3149204. Sequentialaf40d54's hyper parameters: Current learning rate is 9.775171065493646E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:25 INFO  DistriOptimizer$:408 - [Epoch 1 3200/60000][Iteration 25][Wall Clock 5.132435506s] Trained 128 records in 0.135000348 seconds. Throughput is 948.1457 records/second. Loss is 2.3147175. Sequentialaf40d54's hyper parameters: Current learning rate is 9.765625E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:25 INFO  DistriOptimizer$:408 - [Epoch 1 3328/60000][Iteration 26][Wall Clock 5.290918486s] Trained 128 records in 0.15848298 seconds. Throughput is 807.6577 records/second. Loss is 2.2915654. Sequentialaf40d54's hyper parameters: Current learning rate is 9.756097560975611E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:25 INFO  DistriOptimizer$:408 - [Epoch 1 3456/60000][Iteration 27][Wall Clock 5.429315989s] Trained 128 records in 0.138397503 seconds. Throughput is 924.8722 records/second. Loss is 2.2951584. Sequentialaf40d54's hyper parameters: Current learning rate is 9.746588693957114E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:25 INFO  DistriOptimizer$:408 - [Epoch 1 3584/60000][Iteration 28][Wall Clock 5.581665328s] Trained 128 records in 0.152349339 seconds. Throughput is 840.1743 records/second. Loss is 2.2957325. Sequentialaf40d54's hyper parameters: Current learning rate is 9.737098344693283E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:25 INFO  DistriOptimizer$:408 - [Epoch 1 3712/60000][Iteration 29][Wall Clock 5.731593736s] Trained 128 records in 0.149928408 seconds. Throughput is 853.74084 records/second. Loss is 2.2986226. Sequentialaf40d54's hyper parameters: Current learning rate is 9.727626459143969E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:25 INFO  DistriOptimizer$:408 - [Epoch 1 3840/60000][Iteration 30][Wall Clock 5.872836649s] Trained 128 records in 0.141242913 seconds. Throughput is 906.2402 records/second. Loss is 2.3027039. Sequentialaf40d54's hyper parameters: Current learning rate is 9.718172983479106E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:25 INFO  DistriOptimizer$:408 - [Epoch 1 3968/60000][Iteration 31][Wall Clock 5.994043724s] Trained 128 records in 0.121207075 seconds. Throughput is 1056.044 records/second. Loss is 2.3103366. Sequentialaf40d54's hyper parameters: Current learning rate is 9.70873786407767E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:26 INFO  DistriOptimizer$:408 - [Epoch 1 4096/60000][Iteration 32][Wall Clock 6.137013354s] Trained 128 records in 0.14296963 seconds. Throughput is 895.2951 records/second. Loss is 2.2917647. Sequentialaf40d54's hyper parameters: Current learning rate is 9.699321047526674E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:26 INFO  DistriOptimizer$:408 - [Epoch 1 4224/60000][Iteration 33][Wall Clock 6.290617978s] Trained 128 records in 0.153604624 seconds. Throughput is 833.3082 records/second. Loss is 2.2999756. Sequentialaf40d54's hyper parameters: Current learning rate is 9.689922480620155E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:26 INFO  DistriOptimizer$:408 - [Epoch 1 4352/60000][Iteration 34][Wall Clock 6.423957222s] Trained 128 records in 0.133339244 seconds. Throughput is 959.95746 records/second. Loss is 2.2937324. Sequentialaf40d54's hyper parameters: Current learning rate is 9.680542110358181E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:26 INFO  DistriOptimizer$:408 - [Epoch 1 4480/60000][Iteration 35][Wall Clock 6.581299646s] Trained 128 records in 0.157342424 seconds. Throughput is 813.5123 records/second. Loss is 2.3000233. Sequentialaf40d54's hyper parameters: Current learning rate is 9.671179883945841E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:26 INFO  DistriOptimizer$:408 - [Epoch 1 4608/60000][Iteration 36][Wall Clock 6.706345285s] Trained 128 records in 0.125045639 seconds. Throughput is 1023.6262 records/second. Loss is 2.292364. Sequentialaf40d54's hyper parameters: Current learning rate is 9.661835748792271E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:26 INFO  DistriOptimizer$:408 - [Epoch 1 4736/60000][Iteration 37][Wall Clock 6.825775823s] Trained 128 records in 0.119430538 seconds. Throughput is 1071.7527 records/second. Loss is 2.2947845. Sequentialaf40d54's hyper parameters: Current learning rate is 9.652509652509653E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:26 INFO  DistriOptimizer$:408 - [Epoch 1 4864/60000][Iteration 38][Wall Clock 6.985978333s] Trained 128 records in 0.16020251 seconds. Throughput is 798.9888 records/second. Loss is 2.2891057. Sequentialaf40d54's hyper parameters: Current learning rate is 9.643201542912248E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:27 INFO  DistriOptimizer$:408 - [Epoch 1 4992/60000][Iteration 39][Wall Clock 7.131278871s] Trained 128 records in 0.145300538 seconds. Throughput is 880.93274 records/second. Loss is 2.3029904. Sequentialaf40d54's hyper parameters: Current learning rate is 9.633911368015414E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:27 INFO  DistriOptimizer$:408 - [Epoch 1 5120/60000][Iteration 40][Wall Clock 7.262215721s] Trained 128 records in 0.13093685 seconds. Throughput is 977.5705 records/second. Loss is 2.31134. Sequentialaf40d54's hyper parameters: Current learning rate is 9.624639076034649E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:27 INFO  DistriOptimizer$:408 - [Epoch 1 5248/60000][Iteration 41][Wall Clock 7.375765013s] Trained 128 records in 0.113549292 seconds. Throughput is 1127.2638 records/second. Loss is 2.309324. Sequentialaf40d54's hyper parameters: Current learning rate is 9.615384615384615E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:27 INFO  DistriOptimizer$:408 - [Epoch 1 5376/60000][Iteration 42][Wall Clock 7.507110054s] Trained 128 records in 0.131345041 seconds. Throughput is 974.5325 records/second. Loss is 2.3007462. Sequentialaf40d54's hyper parameters: Current learning rate is 9.606147934678195E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:27 INFO  DistriOptimizer$:408 - [Epoch 1 5504/60000][Iteration 43][Wall Clock 7.641805542s] Trained 128 records in 0.134695488 seconds. Throughput is 950.2917 records/second. Loss is 2.3034573. Sequentialaf40d54's hyper parameters: Current learning rate is 9.596928982725527E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:27 INFO  DistriOptimizer$:408 - [Epoch 1 5632/60000][Iteration 44][Wall Clock 7.796563534s] Trained 128 records in 0.154757992 seconds. Throughput is 827.09784 records/second. Loss is 2.3077374. Sequentialaf40d54's hyper parameters: Current learning rate is 9.587727708533078E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:27 INFO  DistriOptimizer$:408 - [Epoch 1 5760/60000][Iteration 45][Wall Clock 7.940866956s] Trained 128 records in 0.144303422 seconds. Throughput is 887.01984 records/second. Loss is 2.292311. Sequentialaf40d54's hyper parameters: Current learning rate is 9.578544061302681E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:28 INFO  DistriOptimizer$:408 - [Epoch 1 5888/60000][Iteration 46][Wall Clock 8.057823447s] Trained 128 records in 0.116956491 seconds. Throughput is 1094.4241 records/second. Loss is 2.3004339. Sequentialaf40d54's hyper parameters: Current learning rate is 9.569377990430623E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:28 INFO  DistriOptimizer$:408 - [Epoch 1 6016/60000][Iteration 47][Wall Clock 8.180007436s] Trained 128 records in 0.122183989 seconds. Throughput is 1047.6005 records/second. Loss is 2.3062084. Sequentialaf40d54's hyper parameters: Current learning rate is 9.560229445506692E-4. Current dampening is 1.7976931348623157E308.  
+2019-10-14 15:44:28 ERROR DistriOptimizer$:894 - Error: org.apache.spark.SparkException: Job 99 cancelled because SparkContext was shut down
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$cleanUpAfterSchedulerStop$1.apply(DAGScheduler.scala:837)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$cleanUpAfterSchedulerStop$1.apply(DAGScheduler.scala:835)
+	at scala.collection.mutable.HashSet.foreach(HashSet.scala:78)
+	at org.apache.spark.scheduler.DAGScheduler.cleanUpAfterSchedulerStop(DAGScheduler.scala:835)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onStop(DAGScheduler.scala:1841)
+	at org.apache.spark.util.EventLoop.stop(EventLoop.scala:83)
+	at org.apache.spark.scheduler.DAGScheduler.stop(DAGScheduler.scala:1754)
+	at org.apache.spark.SparkContext$$anonfun$stop$8.apply$mcV$sp(SparkContext.scala:1931)
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1360)
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:1930)
+	at org.apache.spark.SparkContext$$anonfun$2.apply$mcV$sp(SparkContext.scala:573)
+	at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:216)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1991)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply$mcV$sp(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply(ShutdownHookManager.scala:188)
+	at scala.util.Try$.apply(Try.scala:192)
+	at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:178)
+	at org.apache.hadoop.util.ShutdownHookManager$1.run(ShutdownHookManager.java:54)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:642)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2034)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2131)
+	at org.apache.spark.rdd.RDD$$anonfun$reduce$1.apply(RDD.scala:1029)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+	at org.apache.spark.rdd.RDD.withScope(RDD.scala:363)
+	at org.apache.spark.rdd.RDD.reduce(RDD.scala:1011)
+	at com.intel.analytics.bigdl.optim.DistriOptimizer$.optimize(DistriOptimizer.scala:342)
+	at com.intel.analytics.bigdl.optim.DistriOptimizer.optimize(DistriOptimizer.scala:869)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:238)
+	at java.lang.Thread.run(Thread.java:748)
+
+2019-10-14 15:44:28 INFO  DistriOptimizer$:908 - Retrying 1 times
+2019-10-14 15:44:28 ERROR TransportRequestHandler:210 - Error while invoking RpcHandler#receive() for one-way message.
+org.apache.spark.SparkException: Could not find CoarseGrainedScheduler.
+	at org.apache.spark.rpc.netty.Dispatcher.postMessage(Dispatcher.scala:160)
+	at org.apache.spark.rpc.netty.Dispatcher.postOneWayMessage(Dispatcher.scala:140)
+	at org.apache.spark.rpc.netty.NettyRpcHandler.receive(NettyRpcEnv.scala:655)
+	at org.apache.spark.network.server.TransportRequestHandler.processOneWayMessage(TransportRequestHandler.java:208)
+	at org.apache.spark.network.server.TransportRequestHandler.handle(TransportRequestHandler.java:113)
+	at org.apache.spark.network.server.TransportChannelHandler.channelRead(TransportChannelHandler.java:118)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at org.apache.spark.network.util.TransportFrameDecoder.channelRead(TransportFrameDecoder.java:85)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1359)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:935)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:138)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:645)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:580)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:497)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:459)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:138)
+	at java.lang.Thread.run(Thread.java:748)

@@ -1,0 +1,45 @@
+<?php
+
+function listFolderFiles($dir){
+    $ffs = scandir($dir);
+
+    unset($ffs[array_search('.', $ffs, true)]);
+    unset($ffs[array_search('..', $ffs, true)]);
+
+    // prevent empty ordered elements
+    if (count($ffs) < 1)
+        return;
+
+    echo '<ol>';
+    foreach($ffs as $ff){
+	if(!strstr($ff, '.php')){
+        if(is_dir($dir.'/'.$ff)) {
+  libzip-dev		
+listFolderFiles($dir.'/'.$ff);
+        	
+	}
+	echo '</li>';
+	}
+    }
+    echo '</ol>';
+}
+
+listFolderFiles('.');
+
+
+$zipname = 'Download.zip';
+    $zip = new ZipArchive;
+    $zip->open($zipname, ZipArchive::CREATE);
+    if ($handle = opendir('.')) {
+      while (false !== ($entry = readdir($handle))) {
+        if ($entry != "." && $entry != ".." && !strstr($entry,'.php')) {
+            $zip->addFile($entry);
+        }
+      }
+      closedir($handle);
+    }
+
+    $zip->close();
+?>
+<br><br>
+<a href="Download.zip">Download all the results</a>

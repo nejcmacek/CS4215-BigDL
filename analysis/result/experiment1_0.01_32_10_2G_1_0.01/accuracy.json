@@ -1,0 +1,1 @@
+{"0.100000.out":{"top1":"0.827799975872","top1num":"10000","top5":"0.98710000515","top5num":"10000","loss":"0.772354006767","lossnum":"625"},"1.300000.out":{"top1":"0.834699988365","top1num":"10000","top5":"0.984899997711","top5num":"10000","loss":"0.782124996185","lossnum":"625"},"2.300000.out":{"top1":null,"top1num":null,"top5":null,"top5num":null,"loss":null,"lossnum":null}}
