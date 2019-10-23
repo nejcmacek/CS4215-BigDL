@@ -114,14 +114,18 @@ func generator() {
 
 	// While run is true
 	jid := 0
+	var first = true
 	for run == 1 {
-		// Sleep for iat seconds
-		iat := rand.ExpFloat64() * meaniat
+		if(!first) {
+			// Sleep for iat seconds
+			iat := rand.ExpFloat64() * meaniat
 
-		if debug {
-			log.Printf("[GEN] Waiting %f seconds for new job", iat)
+			if debug {
+				log.Printf("[GEN] Waiting %f seconds for new job", iat)
+			}
+			time.Sleep(time.Duration(iat) * time.Second)
+			first = false
 		}
-		time.Sleep(time.Duration(iat) * time.Second)
 		// Chose class based on CDF
 		r := rand.Float64()
 		i := 0
