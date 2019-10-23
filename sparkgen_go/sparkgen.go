@@ -90,10 +90,6 @@ func init() {
 
 func generator() {
 	meaniat := 1.0/lambda
-
-	// Random seed
-	rand.Seed(time.Now().UnixNano())
-
 	// Parse job probabilities
 	jobp := make([]float64, len(jobClassProbabilities))
 	sum := 0.0
@@ -394,6 +390,10 @@ func contains(array []int, item int) bool {
 func main() {
 	// Parse cmdline options
 	flag.Parse()
+
+    //Random
+	rand.Seed(time.Now().UTC().UnixNano())
+    fmt.Println(randomString(10))
 
 	var config Config
 	configFile, err := os.Open(configFileName)
