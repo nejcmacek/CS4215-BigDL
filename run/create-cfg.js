@@ -84,13 +84,13 @@ const buildConfig = params => ({
 				"spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar " + path.resolve(params.pathCodes, params.runScript),
 			],
 			action: "train",
-			dataPath: "/tmp/mnist",
+			dataPath: "~/bd/datasets/mnist",
 		},
 		hyperParameters: {
 			batchSize: params.batchSize.toString(),
 			maxEpoch: params.maxEpoch.toString(),
 			learningRate: params.learningRate.toString(),
-			learningrateDecay: params.learningRate.toString(),
+			learningrateDecay: params.learningrateDecay.toString(),
 		},
 		classProbability: 1,
 		priorities: [{
