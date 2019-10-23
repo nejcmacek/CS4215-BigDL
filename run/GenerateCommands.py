@@ -1,15 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
-
-# In[18]:
-
-
 import pyDOE2
 import pandas as pd
-
-
-# In[20]:
-
 
 ## The standard variables
 
@@ -33,9 +25,6 @@ for i in range(len(labels)):
     except:
         pass
 
-# labels = ["Learning Rate", "Batch Size", "Max Epoch", "Memory", "Number of Nodes", "Lambda"]
-# levels = [alpha, batch_size, max_epoch, memory, num_of_nodes, lambdas]
-
 level_sizes = []
 for sub in levels:
     level_sizes.append(len(sub))
@@ -48,20 +37,16 @@ for col in experiments.columns:
 print(experiments)
 
 
-# In[ ]:
-
-
-
-
-
-# In[21]:
-
-
 ## Print the commands
 try:
-    number_rep = int(input("Number of repetitions (default 3): "))
+    number_rep = int(input("Number of repetitions (default 1): "))
 except:
-    number_rep = 3
+    number_rep = 1
+
+try:
+    runtime = int(input("Runtime in s (default 18000 - 5 hours): "))
+except:
+    runtime = 18000
 
 file_n = input("What file?: ")
 
@@ -78,32 +63,6 @@ for rep in range(number_rep):
             back_command = back_command + " --" + label + " " + str(experiments[label][i])
             outdir = outdir + "_" + str(experiments[label][i])
 
-        command = "sh ./process-run.sh " + outdir + " --master " + server_url + " " + back_command
+        command = "./process-run.sh " + outdir + " --master " + server_url + " --runtime " + str(runtime) + " " + back_command
         print(command)
-        f.write(command + "\n") 
-    
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
+        f.write(command + "\n")
