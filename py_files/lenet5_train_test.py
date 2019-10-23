@@ -48,7 +48,7 @@ if __name__ == "__main__":
     parser.add_option("-c", "--checkpointPath", dest="checkpointPath", default="/tmp/lenet5")
     parser.add_option("-t", "--endTriggerType", dest="endTriggerType", default="epoch")
     parser.add_option("-n", "--endTriggerNum", type=int, dest="endTriggerNum", default="20")
-    parser.add_option("-d", "--dataPath", dest="dataPath", default="/tmp/mnist")
+    parser.add_option("-d", "--dataPath", dest="dataPath", default="~/bd/datasets/mnist")
     parser.add_option("-l", "--learningRate", dest="learningRate", default="0.01")
     parser.add_option("-k", "--learningrateDecay", dest="learningrateDecay", default="0.0002")
     (options, args) = parser.parse_args(sys.argv)

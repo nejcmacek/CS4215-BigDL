@@ -17,15 +17,14 @@ out_start = "result/experiment"
 server_url = "spark://10.164.0.2:7077"
 
 ## Set the default levels
-labels = ["learningRate", "batchSize", "maxEpoch", "executorMemory", "numberOfNodes", "lambda"]
+labels = ["learningRate", "batchSize", "maxEpoch", "numberOfNodes", "lambda"]
 
 levels = []
-levels.append([0.001, 0.01])
-levels.append([32, 128])
-levels.append([20, 60])
-levels.append(["'1G'", "'2G'"])
-levels.append([1, 2])
-levels.append([0.01, 0.001])
+levels.append([0.005, 0.01, 0.02])
+levels.append([64, 128, 256])
+levels.append([5, 10, 20])
+levels.append([1])
+levels.append([0.0005])
 
 
 for i in range(len(labels)):
@@ -60,9 +59,9 @@ print(experiments)
 
 ## Print the commands
 try:
-    number_rep = int(input("Number of repetitions (default 1): "))
+    number_rep = int(input("Number of repetitions (default 3): "))
 except:
-    number_rep = 1
+    number_rep = 3
 
 file_n = input("What file?: ")
 
