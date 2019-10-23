@@ -393,7 +393,6 @@ func main() {
 
     //Random
 	rand.Seed(time.Now().UTC().UnixNano())
-    fmt.Println(randomString(10))
 
 	var config Config
 	configFile, err := os.Open(configFileName)
