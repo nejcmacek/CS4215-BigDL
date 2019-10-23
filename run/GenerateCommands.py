@@ -16,7 +16,7 @@ levels.append([0.005, 0.01, 0.02])
 levels.append([64, 128, 256])
 levels.append([5, 10, 20])
 levels.append([1])
-levels.append([0.0005])
+levels.append([0.001])
 
 
 for i in range(len(labels)):
