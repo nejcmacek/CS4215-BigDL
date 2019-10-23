@@ -124,8 +124,8 @@ func generator() {
 				log.Printf("[GEN] Waiting %f seconds for new job", iat)
 			}
 			time.Sleep(time.Duration(iat) * time.Second)
-			first = false
 		}
+		first = false
 		// Chose class based on CDF
 		r := rand.Float64()
 		i := 0
