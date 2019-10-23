@@ -79,6 +79,7 @@ var lambda float64 = 0.001
 var numberOfNodes int = 1
 var outdir string = ""
 var runningCmds = list.New()
+rand.Seed(time.Now().UnixNano())
 
 func init() {
 	flag.StringVar(&configFileName, "c", "conf.json", "config file")

@@ -37,13 +37,13 @@
     git clone https://github.com/nejcmacek/CS4215-BigDL
 
 ## Start master:
+    cd CS4215-BigDL/run
     bash process-start.sh 1 0 10.164.0.2 7077 10.164.0.2:8080
-    bash process-start.sh 1 0 34.90.55.237 7077 34.90.55.237:8080          
 
 
 ## Start slaves:
+    cd CS4215-BigDL/run
     bash process-start.sh 0 1 10.164.0.2 7077 10.164.0.2:8080
-    bash process-start.sh 0 1 34.90.55.237 7077 34.90.55.237:8080      
 
 ## Then run on master
     bash process-run.sh results
@@ -62,3 +62,8 @@
  
 ## Run the php server
     sudo php -S 0.0.0.0:81 &> /dev/null &
+    
+## Execute the generators
+    ./worker1.sh &> /dev/null &
+    
+    disown
