@@ -1,0 +1,399 @@
+2019/10/23 21:21:02 Recording output to result/experiment1_0.01_256_20_1_0.001
+2019/10/23 21:21:02 Found 1 job classes and 1 priorities!
+2019/10/23 21:21:02 Starting the scheduler ...
+2019/10/23 21:21:02  done!
+2019/10/23 21:21:02 Starting the generator ...
+2019/10/23 21:21:02  done!
+2019/10/23 21:21:02 Running for 18000 seconds
+2019/10/23 21:21:02 [SCH] Starting new cycle running job <nil>
+2019/10/23 21:21:02 0
+2019/10/23 21:21:02 1
+2019/10/23 21:21:02 [GEN] Generated new job 0 of class 1
+2019/10/23 21:21:02 [GEN] Signalled new job
+2019/10/23 21:21:02 [GEN] Waiting 183.350912 seconds for new job
+2019/10/23 21:21:02 [SCH] Recieved gen signal
+2019/10/23 21:21:02 [SEL] Length of Queue 0 is 1
+2019/10/23 21:21:02 [SEL] Selected job 0 from Queue 0
+2019/10/23 21:21:02 [DIS-0.100000] Starting job 0: spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 
+2019/10/23 21:21:02 [Jobs Running] 1
+2019/10/23 21:21:02 [SCH] Dispatched job 0 of class 1
+2019/10/23 21:21:02 [SCH] Starting new cycle running job &{1.5718656624412708e+09 1.5718656624414072e+09 0 1 0 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/23 21:24:05 0
+2019/10/23 21:24:05 1
+2019/10/23 21:24:05 [GEN] Generated new job 1 of class 1
+2019/10/23 21:24:05 [GEN] Signalled new job
+2019/10/23 21:24:05 [GEN] Waiting 624.252798 seconds for new job
+2019/10/23 21:24:05 [SCH] Recieved gen signal
+2019/10/23 21:24:05 [SCH] Ignored gen signal
+2019/10/23 21:24:05 [SCH] Starting new cycle running job &{1.5718656624412708e+09 1.5718656624414072e+09 0 1 0 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/23 21:32:12 [LOG-0.100000] Job 0 of class 1 ended with status true
+2019/10/23 21:32:12 [LOG-DONE] 1,0,true,1571865662.441271,1571865662.441407,1571866332.058069
+1,0,true,1571865662.441271,1571865662.441407,1571866332.058069
+2019/10/23 21:32:12 [SCH] Received done signal
+2019/10/23 21:32:12 [SEL] Length of Queue 0 is 1
+2019/10/23 21:32:12 [SEL] Selected job 1 from Queue 0
+2019/10/23 21:32:12 [DIS-1.300000] Starting job 1: spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 
+2019/10/23 21:32:12 [Running Jobs] 1
+2019/10/23 21:32:12 [SCH] Dispatched job 1 of class 1
+2019/10/23 21:32:12 [SCH] Starting new cycle running job &{1.5718658454417963e+09 1.571866332058181e+09 0 1 1 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/23 21:34:29 0
+2019/10/23 21:34:29 1
+2019/10/23 21:34:29 [GEN] Generated new job 2 of class 1
+2019/10/23 21:34:29 [GEN] Signalled new job
+2019/10/23 21:34:29 [GEN] Waiting 726.946186 seconds for new job
+2019/10/23 21:34:29 [SCH] Recieved gen signal
+2019/10/23 21:34:29 [SCH] Ignored gen signal
+2019/10/23 21:34:29 [SCH] Starting new cycle running job &{1.5718658454417963e+09 1.571866332058181e+09 0 1 1 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/23 21:44:03 [LOG-1.300000] Job 1 of class 1 ended with status true
+2019/10/23 21:44:03 [LOG-DONE] 1,1,true,1571865845.441796,1571866332.058181,1571867043.593719
+1,1,true,1571865845.441796,1571866332.058181,1571867043.593719
+2019/10/23 21:44:03 [SCH] Received done signal
+2019/10/23 21:44:03 [SEL] Length of Queue 0 is 1
+2019/10/23 21:44:03 [SEL] Selected job 2 from Queue 0
+2019/10/23 21:44:03 [DIS-2.300000] Starting job 2: spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 
+2019/10/23 21:44:03 [Running Jobs] 1
+2019/10/23 21:44:03 [SCH] Dispatched job 2 of class 1
+2019/10/23 21:44:03 [SCH] Starting new cycle running job &{1.5718664694420297e+09 1.5718670435937917e+09 0 1 2 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/23 21:46:35 0
+2019/10/23 21:46:35 1
+2019/10/23 21:46:35 [GEN] Generated new job 3 of class 1
+2019/10/23 21:46:35 [GEN] Signalled new job
+2019/10/23 21:46:35 [GEN] Waiting 888.086594 seconds for new job
+2019/10/23 21:46:35 [SCH] Recieved gen signal
+2019/10/23 21:46:35 [SCH] Ignored gen signal
+2019/10/23 21:46:35 [SCH] Starting new cycle running job &{1.5718664694420297e+09 1.5718670435937917e+09 0 1 2 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/23 21:54:50 [LOG-2.300000] Job 2 of class 1 ended with status true
+2019/10/23 21:54:50 [LOG-DONE] 1,2,true,1571866469.442030,1571867043.593792,1571867690.339376
+1,2,true,1571866469.442030,1571867043.593792,1571867690.339376
+2019/10/23 21:54:50 [SCH] Received done signal
+2019/10/23 21:54:50 [SEL] Length of Queue 0 is 1
+2019/10/23 21:54:50 [SEL] Selected job 3 from Queue 0
+2019/10/23 21:54:50 [DIS-3.300000] Starting job 3: spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 
+2019/10/23 21:54:50 [Running Jobs] 1
+2019/10/23 21:54:50 [SCH] Dispatched job 3 of class 1
+2019/10/23 21:54:50 [SCH] Starting new cycle running job &{1.571867195442232e+09 1.5718676903394625e+09 0 1 3 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/23 22:01:23 0
+2019/10/23 22:01:23 1
+2019/10/23 22:01:23 [GEN] Generated new job 4 of class 1
+2019/10/23 22:01:23 [GEN] Signalled new job
+2019/10/23 22:01:23 [GEN] Waiting 749.179881 seconds for new job
+2019/10/23 22:01:23 [SCH] Recieved gen signal
+2019/10/23 22:01:23 [SCH] Ignored gen signal
+2019/10/23 22:01:23 [SCH] Starting new cycle running job &{1.571867195442232e+09 1.5718676903394625e+09 0 1 3 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/23 22:05:05 [LOG-3.300000] Job 3 of class 1 ended with status true
+2019/10/23 22:05:05 [LOG-DONE] 1,3,true,1571867195.442232,1571867690.339463,1571868305.891725
+1,3,true,1571867195.442232,1571867690.339463,1571868305.891725
+2019/10/23 22:05:05 [SCH] Received done signal
+2019/10/23 22:05:05 [SEL] Length of Queue 0 is 1
+2019/10/23 22:05:05 [SEL] Selected job 4 from Queue 0
+2019/10/23 22:05:05 [DIS-4.300000] Starting job 4: spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 
+2019/10/23 22:05:05 [Running Jobs] 1
+2019/10/23 22:05:05 [SCH] Dispatched job 4 of class 1
+2019/10/23 22:05:05 [SCH] Starting new cycle running job &{1.5718680834426172e+09 1.571868305891916e+09 0 1 4 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/23 22:13:52 0
+2019/10/23 22:13:52 1
+2019/10/23 22:13:52 [GEN] Generated new job 5 of class 1
+2019/10/23 22:13:52 [GEN] Signalled new job
+2019/10/23 22:13:52 [GEN] Waiting 378.691457 seconds for new job
+2019/10/23 22:13:52 [SCH] Recieved gen signal
+2019/10/23 22:13:52 [SCH] Ignored gen signal
+2019/10/23 22:13:52 [SCH] Starting new cycle running job &{1.5718680834426172e+09 1.571868305891916e+09 0 1 4 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/23 22:15:20 [LOG-4.300000] Job 4 of class 1 ended with status true
+2019/10/23 22:15:20 [LOG-DONE] 1,4,true,1571868083.442617,1571868305.891916,1571868920.612284
+1,4,true,1571868083.442617,1571868305.891916,1571868920.612284
+2019/10/23 22:15:20 [SCH] Received done signal
+2019/10/23 22:15:20 [SEL] Length of Queue 0 is 1
+2019/10/23 22:15:20 [SEL] Selected job 5 from Queue 0
+2019/10/23 22:15:20 [DIS-5.300000] Starting job 5: spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 
+2019/10/23 22:15:20 [Running Jobs] 1
+2019/10/23 22:15:20 [SCH] Dispatched job 5 of class 1
+2019/10/23 22:15:20 [SCH] Starting new cycle running job &{1.5718688324428763e+09 1.5718689206123953e+09 0 1 5 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/23 22:20:10 0
+2019/10/23 22:20:10 1
+2019/10/23 22:20:10 [GEN] Generated new job 6 of class 1
+2019/10/23 22:20:10 [GEN] Signalled new job
+2019/10/23 22:20:10 [GEN] Waiting 1497.279844 seconds for new job
+2019/10/23 22:20:10 [SCH] Recieved gen signal
+2019/10/23 22:20:10 [SCH] Ignored gen signal
+2019/10/23 22:20:10 [SCH] Starting new cycle running job &{1.5718688324428763e+09 1.5718689206123953e+09 0 1 5 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/23 22:27:15 [LOG-5.300000] Job 5 of class 1 ended with status true
+2019/10/23 22:27:15 [LOG-DONE] 1,5,true,1571868832.442876,1571868920.612395,1571869635.992529
+1,5,true,1571868832.442876,1571868920.612395,1571869635.992529
+2019/10/23 22:27:15 [SCH] Received done signal
+2019/10/23 22:27:15 [SEL] Length of Queue 0 is 1
+2019/10/23 22:27:15 [SEL] Selected job 6 from Queue 0
+2019/10/23 22:27:15 [DIS-6.300000] Starting job 6: spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 
+2019/10/23 22:27:16 [Running Jobs] 1
+2019/10/23 22:27:16 [SCH] Dispatched job 6 of class 1
+2019/10/23 22:27:16 [SCH] Starting new cycle running job &{1.5718692104430766e+09 1.571869635992632e+09 0 1 6 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/23 22:38:35 [LOG-6.300000] Job 6 of class 1 ended with status true
+2019/10/23 22:38:35 [LOG-DONE] 1,6,true,1571869210.443077,1571869635.992632,1571870315.350307
+1,6,true,1571869210.443077,1571869635.992632,1571870315.350307
+2019/10/23 22:38:35 [SCH] Received done signal
+2019/10/23 22:38:35 [SEL] Length of Queue 0 is 0
+2019/10/23 22:38:35 [SCH] Starting new cycle running job <nil>
+2019/10/23 22:45:07 0
+2019/10/23 22:45:07 1
+2019/10/23 22:45:07 [GEN] Generated new job 7 of class 1
+2019/10/23 22:45:07 [GEN] Signalled new job
+2019/10/23 22:45:07 [GEN] Waiting 399.851284 seconds for new job
+2019/10/23 22:45:07 [SCH] Recieved gen signal
+2019/10/23 22:45:07 [SEL] Length of Queue 0 is 1
+2019/10/23 22:45:07 [SEL] Selected job 7 from Queue 0
+2019/10/23 22:45:07 [DIS-7.100000] Starting job 7: spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 
+2019/10/23 22:45:07 [Jobs Running] 1
+2019/10/23 22:45:07 [SCH] Dispatched job 7 of class 1
+2019/10/23 22:45:07 [SCH] Starting new cycle running job &{1.5718707074432735e+09 1.5718707074434123e+09 0 1 7 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/23 22:51:46 0
+2019/10/23 22:51:46 1
+2019/10/23 22:51:46 [GEN] Generated new job 8 of class 1
+2019/10/23 22:51:46 [GEN] Signalled new job
+2019/10/23 22:51:46 [GEN] Waiting 109.075250 seconds for new job
+2019/10/23 22:51:46 [SCH] Recieved gen signal
+2019/10/23 22:51:46 [SCH] Ignored gen signal
+2019/10/23 22:51:46 [SCH] Starting new cycle running job &{1.5718707074432735e+09 1.5718707074434123e+09 0 1 7 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/23 22:53:35 0
+2019/10/23 22:53:35 1
+2019/10/23 22:53:35 [GEN] Generated new job 9 of class 1
+2019/10/23 22:53:35 [GEN] Signalled new job
+2019/10/23 22:53:35 [GEN] Waiting 816.980017 seconds for new job
+2019/10/23 22:53:35 [SCH] Recieved gen signal
+2019/10/23 22:53:35 [SCH] Ignored gen signal
+2019/10/23 22:53:35 [SCH] Starting new cycle running job &{1.5718707074432735e+09 1.5718707074434123e+09 0 1 7 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/23 22:55:21 [LOG-7.100000] Job 7 of class 1 ended with status true
+2019/10/23 22:55:21 [LOG-DONE] 1,7,true,1571870707.443274,1571870707.443412,1571871321.410549
+1,7,true,1571870707.443274,1571870707.443412,1571871321.410549
+2019/10/23 22:55:21 [SCH] Received done signal
+2019/10/23 22:55:21 [SEL] Length of Queue 0 is 2
+2019/10/23 22:55:21 [SEL] Selected job 8 from Queue 0
+2019/10/23 22:55:21 [DIS-8.300000] Starting job 8: spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 
+2019/10/23 22:55:21 [Running Jobs] 1
+2019/10/23 22:55:21 [SCH] Dispatched job 8 of class 1
+2019/10/23 22:55:21 [SCH] Starting new cycle running job &{1.5718711064434817e+09 1.5718713214106548e+09 0 1 8 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/23 23:06:20 [LOG-8.300000] Job 8 of class 1 ended with status true
+2019/10/23 23:06:20 [LOG-DONE] 1,8,true,1571871106.443482,1571871321.410655,1571871980.843505
+1,8,true,1571871106.443482,1571871321.410655,1571871980.843505
+2019/10/23 23:06:20 [SCH] Received done signal
+2019/10/23 23:06:20 [SEL] Length of Queue 0 is 1
+2019/10/23 23:06:20 [SEL] Selected job 9 from Queue 0
+2019/10/23 23:06:20 [DIS-9.300000] Starting job 9: spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 
+2019/10/23 23:06:20 [Running Jobs] 1
+2019/10/23 23:06:20 [SCH] Dispatched job 9 of class 1
+2019/10/23 23:06:20 [SCH] Starting new cycle running job &{1.5718712154437153e+09 1.5718719808436131e+09 0 1 9 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/23 23:07:11 0
+2019/10/23 23:07:11 1
+2019/10/23 23:07:11 [GEN] Generated new job 10 of class 1
+2019/10/23 23:07:11 [GEN] Signalled new job
+2019/10/23 23:07:11 [GEN] Waiting 1654.233998 seconds for new job
+2019/10/23 23:07:11 [SCH] Recieved gen signal
+2019/10/23 23:07:11 [SCH] Ignored gen signal
+2019/10/23 23:07:11 [SCH] Starting new cycle running job &{1.5718712154437153e+09 1.5718719808436131e+09 0 1 9 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/23 23:19:02 [LOG-9.300000] Job 9 of class 1 ended with status true
+2019/10/23 23:19:02 [LOG-DONE] 1,9,true,1571871215.443715,1571871980.843613,1571872742.669941
+1,9,true,1571871215.443715,1571871980.843613,1571872742.669941
+2019/10/23 23:19:02 [SCH] Received done signal
+2019/10/23 23:19:02 [SEL] Length of Queue 0 is 1
+2019/10/23 23:19:02 [SEL] Selected job 10 from Queue 0
+2019/10/23 23:19:02 [DIS-10.300000] Starting job 10: spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 
+2019/10/23 23:19:02 [Running Jobs] 1
+2019/10/23 23:19:02 [SCH] Dispatched job 10 of class 1
+2019/10/23 23:19:02 [SCH] Starting new cycle running job &{1.571872031443907e+09 1.5718727426700373e+09 0 1 10 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/23 23:29:44 [LOG-10.300000] Job 10 of class 1 ended with status true
+2019/10/23 23:29:44 [LOG-DONE] 1,10,true,1571872031.443907,1571872742.670037,1571873384.738915
+1,10,true,1571872031.443907,1571872742.670037,1571873384.738915
+2019/10/23 23:29:44 [SCH] Received done signal
+2019/10/23 23:29:44 [SEL] Length of Queue 0 is 0
+2019/10/23 23:29:44 [SCH] Starting new cycle running job <nil>
+2019/10/23 23:34:45 0
+2019/10/23 23:34:45 1
+2019/10/23 23:34:45 [GEN] Generated new job 11 of class 1
+2019/10/23 23:34:45 [GEN] Signalled new job
+2019/10/23 23:34:45 [GEN] Waiting 636.677713 seconds for new job
+2019/10/23 23:34:45 [SCH] Recieved gen signal
+2019/10/23 23:34:45 [SEL] Length of Queue 0 is 1
+2019/10/23 23:34:45 [SEL] Selected job 11 from Queue 0
+2019/10/23 23:34:45 [DIS-11.100000] Starting job 11: spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 
+2019/10/23 23:34:45 [Jobs Running] 1
+2019/10/23 23:34:45 [SCH] Dispatched job 11 of class 1
+2019/10/23 23:34:45 [SCH] Starting new cycle running job &{1.571873685444093e+09 1.5718736854441345e+09 0 1 11 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/23 23:45:21 0
+2019/10/23 23:45:21 1
+2019/10/23 23:45:21 [GEN] Generated new job 12 of class 1
+2019/10/23 23:45:21 [GEN] Signalled new job
+2019/10/23 23:45:21 [GEN] Waiting 872.808328 seconds for new job
+2019/10/23 23:45:21 [SCH] Recieved gen signal
+2019/10/23 23:45:21 [SCH] Ignored gen signal
+2019/10/23 23:45:21 [SCH] Starting new cycle running job &{1.571873685444093e+09 1.5718736854441345e+09 0 1 11 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/23 23:46:26 [LOG-11.100000] Job 11 of class 1 ended with status true
+2019/10/23 23:46:26 [LOG-DONE] 1,11,true,1571873685.444093,1571873685.444134,1571874386.943235
+1,11,true,1571873685.444093,1571873685.444134,1571874386.943235
+2019/10/23 23:46:26 [SCH] Received done signal
+2019/10/23 23:46:26 [SEL] Length of Queue 0 is 1
+2019/10/23 23:46:26 [SEL] Selected job 12 from Queue 0
+2019/10/23 23:46:26 [DIS-12.300000] Starting job 12: spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 
+2019/10/23 23:46:26 [Running Jobs] 1
+2019/10/23 23:46:26 [SCH] Dispatched job 12 of class 1
+2019/10/23 23:46:26 [SCH] Starting new cycle running job &{1.5718743214443028e+09 1.5718743869433417e+09 0 1 12 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/23 23:56:51 [LOG-12.300000] Job 12 of class 1 ended with status true
+2019/10/23 23:56:51 [LOG-DONE] 1,12,true,1571874321.444303,1571874386.943342,1571875011.380280
+1,12,true,1571874321.444303,1571874386.943342,1571875011.380280
+2019/10/23 23:56:51 [SCH] Received done signal
+2019/10/23 23:56:51 [SEL] Length of Queue 0 is 0
+2019/10/23 23:56:51 [SCH] Starting new cycle running job <nil>
+2019/10/23 23:59:53 0
+2019/10/23 23:59:53 1
+2019/10/23 23:59:53 [GEN] Generated new job 13 of class 1
+2019/10/23 23:59:53 [GEN] Signalled new job
+2019/10/23 23:59:53 [GEN] Waiting 296.023562 seconds for new job
+2019/10/23 23:59:53 [SCH] Recieved gen signal
+2019/10/23 23:59:53 [SEL] Length of Queue 0 is 1
+2019/10/23 23:59:53 [SEL] Selected job 13 from Queue 0
+2019/10/23 23:59:53 [DIS-13.100000] Starting job 13: spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 
+2019/10/23 23:59:53 [Jobs Running] 1
+2019/10/23 23:59:53 [SCH] Dispatched job 13 of class 1
+2019/10/23 23:59:53 [SCH] Starting new cycle running job &{1.5718751934444976e+09 1.5718751934445872e+09 0 1 13 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/24 00:04:49 0
+2019/10/24 00:04:49 1
+2019/10/24 00:04:49 [GEN] Generated new job 14 of class 1
+2019/10/24 00:04:49 [GEN] Signalled new job
+2019/10/24 00:04:49 [GEN] Waiting 281.913947 seconds for new job
+2019/10/24 00:04:49 [SCH] Recieved gen signal
+2019/10/24 00:04:49 [SCH] Ignored gen signal
+2019/10/24 00:04:49 [SCH] Starting new cycle running job &{1.5718751934444976e+09 1.5718751934445872e+09 0 1 13 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/24 00:09:30 0
+2019/10/24 00:09:30 1
+2019/10/24 00:09:30 [GEN] Generated new job 15 of class 1
+2019/10/24 00:09:30 [GEN] Signalled new job
+2019/10/24 00:09:30 [GEN] Waiting 101.786928 seconds for new job
+2019/10/24 00:09:30 [SCH] Recieved gen signal
+2019/10/24 00:09:30 [SCH] Ignored gen signal
+2019/10/24 00:09:30 [SCH] Starting new cycle running job &{1.5718751934444976e+09 1.5718751934445872e+09 0 1 13 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/24 00:09:37 [LOG-13.100000] Job 13 of class 1 ended with status true
+2019/10/24 00:09:37 [LOG-DONE] 1,13,true,1571875193.444498,1571875193.444587,1571875777.175984
+1,13,true,1571875193.444498,1571875193.444587,1571875777.175984
+2019/10/24 00:09:37 [SCH] Received done signal
+2019/10/24 00:09:37 [SEL] Length of Queue 0 is 2
+2019/10/24 00:09:37 [SEL] Selected job 14 from Queue 0
+2019/10/24 00:09:37 [DIS-14.300000] Starting job 14: spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 
+2019/10/24 00:09:37 [Running Jobs] 1
+2019/10/24 00:09:37 [SCH] Dispatched job 14 of class 1
+2019/10/24 00:09:37 [SCH] Starting new cycle running job &{1.5718754894446914e+09 1.571875777176072e+09 0 1 14 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/24 00:11:11 0
+2019/10/24 00:11:11 1
+2019/10/24 00:11:11 [GEN] Generated new job 16 of class 1
+2019/10/24 00:11:11 [GEN] Signalled new job
+2019/10/24 00:11:11 [GEN] Waiting 733.613052 seconds for new job
+2019/10/24 00:11:11 [SCH] Recieved gen signal
+2019/10/24 00:11:11 [SCH] Ignored gen signal
+2019/10/24 00:11:11 [SCH] Starting new cycle running job &{1.5718754894446914e+09 1.571875777176072e+09 0 1 14 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/24 00:20:13 [LOG-14.300000] Job 14 of class 1 ended with status true
+2019/10/24 00:20:13 [LOG-DONE] 1,14,true,1571875489.444691,1571875777.176072,1571876413.056878
+1,14,true,1571875489.444691,1571875777.176072,1571876413.056878
+2019/10/24 00:20:13 [SCH] Received done signal
+2019/10/24 00:20:13 [SEL] Length of Queue 0 is 2
+2019/10/24 00:20:13 [SEL] Selected job 15 from Queue 0
+2019/10/24 00:20:13 [DIS-15.300000] Starting job 15: spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 
+2019/10/24 00:20:13 [Running Jobs] 1
+2019/10/24 00:20:13 [SCH] Dispatched job 15 of class 1
+2019/10/24 00:20:13 [SCH] Starting new cycle running job &{1.571875770444938e+09 1.5718764130569823e+09 0 1 15 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/24 00:23:24 0
+2019/10/24 00:23:24 1
+2019/10/24 00:23:24 [GEN] Generated new job 17 of class 1
+2019/10/24 00:23:24 [GEN] Signalled new job
+2019/10/24 00:23:24 [GEN] Waiting 98.800498 seconds for new job
+2019/10/24 00:23:24 [SCH] Recieved gen signal
+2019/10/24 00:23:24 [SCH] Ignored gen signal
+2019/10/24 00:23:24 [SCH] Starting new cycle running job &{1.571875770444938e+09 1.5718764130569823e+09 0 1 15 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/24 00:25:02 0
+2019/10/24 00:25:02 1
+2019/10/24 00:25:02 [GEN] Generated new job 18 of class 1
+2019/10/24 00:25:02 [GEN] Signalled new job
+2019/10/24 00:25:02 [GEN] Waiting 3252.543323 seconds for new job
+2019/10/24 00:25:02 [SCH] Recieved gen signal
+2019/10/24 00:25:02 [SCH] Ignored gen signal
+2019/10/24 00:25:02 [SCH] Starting new cycle running job &{1.571875770444938e+09 1.5718764130569823e+09 0 1 15 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/24 00:30:35 [SCH] Received done signal
+2019/10/24 00:30:35 [SEL] Length of Queue 0 is 3
+2019/10/24 00:30:35 [SEL] Selected job 16 from Queue 0
+2019/10/24 00:30:35 [DIS-16.299999] Starting job 16: spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 
+2019/10/24 00:30:35 [LOG-15.300000] Job 15 of class 1 ended with status true
+2019/10/24 00:30:35 [LOG-DONE] 1,15,true,1571875770.444938,1571876413.056982,1571877035.426902
+1,15,true,1571875770.444938,1571876413.056982,1571877035.426902
+2019/10/24 00:30:35 [Running Jobs] 1
+2019/10/24 00:30:35 [SCH] Dispatched job 16 of class 1
+2019/10/24 00:30:35 [SCH] Starting new cycle running job &{1.5718758714451416e+09 1.5718770354269624e+09 0 1 16 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/24 00:41:25 [SCH] Received done signal
+2019/10/24 00:41:25 [SEL] Length of Queue 0 is 2
+2019/10/24 00:41:25 [SEL] Selected job 17 from Queue 0
+2019/10/24 00:41:25 [DIS-17.299999] Starting job 17: spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 
+2019/10/24 00:41:25 [LOG-16.299999] Job 16 of class 1 ended with status true
+2019/10/24 00:41:25 [LOG-DONE] 1,16,true,1571875871.445142,1571877035.426962,1571877685.477585
+1,16,true,1571875871.445142,1571877035.426962,1571877685.477585
+2019/10/24 00:41:25 [Running Jobs] 1
+2019/10/24 00:41:25 [SCH] Dispatched job 17 of class 1
+2019/10/24 00:41:25 [SCH] Starting new cycle running job &{1.5718766044453373e+09 1.5718776854776695e+09 0 1 17 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/24 00:53:32 [LOG-17.299999] Job 17 of class 1 ended with status true
+2019/10/24 00:53:32 [LOG-DONE] 1,17,true,1571876604.445337,1571877685.477669,1571878412.731212
+1,17,true,1571876604.445337,1571877685.477669,1571878412.731212
+2019/10/24 00:53:32 [SCH] Received done signal
+2019/10/24 00:53:32 [SEL] Length of Queue 0 is 1
+2019/10/24 00:53:32 [SEL] Selected job 18 from Queue 0
+2019/10/24 00:53:32 [DIS-18.299999] Starting job 18: spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 
+2019/10/24 00:53:32 [Running Jobs] 1
+2019/10/24 00:53:32 [SCH] Dispatched job 18 of class 1
+2019/10/24 00:53:32 [SCH] Starting new cycle running job &{1.5718767024455652e+09 1.571878412731305e+09 0 1 18 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/24 01:05:29 [LOG-18.299999] Job 18 of class 1 ended with status true
+2019/10/24 01:05:29 [LOG-DONE] 1,18,true,1571876702.445565,1571878412.731305,1571879129.975030
+1,18,true,1571876702.445565,1571878412.731305,1571879129.975030
+2019/10/24 01:05:29 [SCH] Received done signal
+2019/10/24 01:05:29 [SEL] Length of Queue 0 is 0
+2019/10/24 01:05:29 [SCH] Starting new cycle running job <nil>
+2019/10/24 01:19:14 0
+2019/10/24 01:19:14 1
+2019/10/24 01:19:14 [GEN] Generated new job 19 of class 1
+2019/10/24 01:19:14 [GEN] Signalled new job
+2019/10/24 01:19:14 [GEN] Waiting 1035.621176 seconds for new job
+2019/10/24 01:19:14 [SCH] Recieved gen signal
+2019/10/24 01:19:14 [SEL] Length of Queue 0 is 1
+2019/10/24 01:19:14 [SEL] Selected job 19 from Queue 0
+2019/10/24 01:19:14 [DIS-19.100000] Starting job 19: spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 
+2019/10/24 01:19:14 [Jobs Running] 1
+2019/10/24 01:19:14 [SCH] Dispatched job 19 of class 1
+2019/10/24 01:19:14 [SCH] Starting new cycle running job &{1.5718799544457598e+09 1.5718799544458792e+09 0 1 19 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/24 01:30:12 [LOG-19.100000] Job 19 of class 1 ended with status true
+2019/10/24 01:30:12 [LOG-DONE] 1,19,true,1571879954.445760,1571879954.445879,1571880612.617859
+1,19,true,1571879954.445760,1571879954.445879,1571880612.617859
+2019/10/24 01:30:12 [SCH] Received done signal
+2019/10/24 01:30:12 [SEL] Length of Queue 0 is 0
+2019/10/24 01:30:12 [SCH] Starting new cycle running job <nil>
+2019/10/24 01:36:29 0
+2019/10/24 01:36:29 1
+2019/10/24 01:36:29 [GEN] Generated new job 20 of class 1
+2019/10/24 01:36:29 [GEN] Signalled new job
+2019/10/24 01:36:29 [GEN] Waiting 3223.060783 seconds for new job
+2019/10/24 01:36:29 [SCH] Recieved gen signal
+2019/10/24 01:36:29 [SEL] Length of Queue 0 is 1
+2019/10/24 01:36:29 [SEL] Selected job 20 from Queue 0
+2019/10/24 01:36:29 [DIS-20.100000] Starting job 20: spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 
+2019/10/24 01:36:29 [Jobs Running] 1
+2019/10/24 01:36:29 [SCH] Dispatched job 20 of class 1
+2019/10/24 01:36:29 [SCH] Starting new cycle running job &{1.571880989445993e+09 1.5718809894460657e+09 0 1 20 spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 }
+2019/10/24 01:46:33 [LOG-20.100000] Job 20 of class 1 ended with status true
+2019/10/24 01:46:33 [LOG-DONE] 1,20,true,1571880989.445993,1571880989.446066,1571881593.868957
+1,20,true,1571880989.445993,1571880989.446066,1571881593.868957
+2019/10/24 01:46:33 [SCH] Received done signal
+2019/10/24 01:46:33 [SEL] Length of Queue 0 is 0
+2019/10/24 01:46:33 [SCH] Starting new cycle running job <nil>
+2019/10/24 02:21:02 Shutting down ...
+2019/10/24 02:30:12 0
+2019/10/24 02:30:12 1
+2019/10/24 02:30:12 [GEN] Generated new job 21 of class 1
+2019/10/24 02:30:12 [GEN] Signalled new job
+2019/10/24 02:30:12 [SCH] Recieved gen signal
+2019/10/24 02:30:12 [SEL] Length of Queue 0 is 1
+2019/10/24 02:30:12 [SEL] Selected job 21 from Queue 0
+2019/10/24 02:30:12 [DIS-21.100000] Starting job 21: spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 256 --endTriggerNum 20 --learningRate 0.01 --learningrateDecay 0.0002 
+2019/10/24 02:30:12 [Jobs Running] 1
+2019/10/24 02:30:12 [SCH] Dispatched job 21 of class 1
+2019/10/24 02:30:12 Killing all cmds
+2019/10/24 02:30:12  done!
