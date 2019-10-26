@@ -367,3 +367,15 @@
 2019/10/26 15:36:42 [SEL] Length of Queue 0 is 0
 2019/10/26 15:36:42 [SCH] Starting new cycle running job <nil>
 2019/10/26 15:44:02 Shutting down ...
+2019/10/26 16:53:21 0
+2019/10/26 16:53:21 1
+2019/10/26 16:53:21 [GEN] Generated new job 20 of class 1
+2019/10/26 16:53:21 [GEN] Signalled new job
+2019/10/26 16:53:21 [SCH] Recieved gen signal
+2019/10/26 16:53:21 [SEL] Length of Queue 0 is 1
+2019/10/26 16:53:21 [SEL] Selected job 20 from Queue 0
+2019/10/26 16:53:21 [DIS-20.100000] Starting job 20: spark-submit --master spark://10.164.0.2:7077 --driver-cores 1 --driver-memory 1G --total-executor-cores 1 --executor-cores 1 --executor-memory 1G --py-files /home/test/bd/spark/lib/bigdl-0.8.0-python-api.zip,/home/test/bd/codes/lenet5.py --properties-file /home/test/bd/spark/conf/spark-bigdl.conf --jars /home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.driver.extraClassPath=/home/test/bd/spark/lib/bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar --conf spark.executer.extraClassPath=bigdl-SPARK_2.3-0.8.0-jar-with-dependencies.jar /home/test/bd/codes/lenet5.py --action train --dataPath ~/bd/datasets/mnist --batchSize 128 --endTriggerNum 5 --learningRate 0.02 --learningrateDecay 0.0002 
+2019/10/26 16:53:21 [Jobs Running] 1
+2019/10/26 16:53:21 [SCH] Dispatched job 20 of class 1
+2019/10/26 16:53:21 Killing all cmds
+2019/10/26 16:53:21  done!
