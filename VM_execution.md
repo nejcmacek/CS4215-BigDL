@@ -67,3 +67,8 @@
     ./worker1.sh &> /dev/null &
     
     disown
+    
+## Execute the generators final
+    ./final_set1.sh &> ~/CS4215-BigDL/run/final_set_log1.txt &
+    
+    disown
